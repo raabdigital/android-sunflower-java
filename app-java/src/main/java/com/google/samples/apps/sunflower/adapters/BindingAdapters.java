@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Google LLC
+ * Copyright 2019 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,4 +14,18 @@
  * limitations under the License.
  */
 
-include ':app', ':app-java'
+package com.google.samples.apps.sunflower.adapters;
+
+import android.view.View;
+
+import androidx.databinding.BindingAdapter;
+
+/**
+ * Created by Shawn Wang on 3/28/19.
+ */
+public class BindingAdapters {
+    @BindingAdapter("isGone")
+    public static void bindIsGone(View view, boolean isGone) {
+        view.setVisibility(isGone ? View.GONE : View.VISIBLE);
+    }
+}

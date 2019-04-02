@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Google LLC
+ * Copyright 2019 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,4 +14,12 @@
  * limitations under the License.
  */
 
-include ':app', ':app-java'
+package com.google.samples.apps.sunflower.utilities;
+
+/**
+ * Constants used throughout the app.
+ */
+public class Constants {
+    public static final String DATABASE_NAME = "sunflower-db";
+    public static final String PLANT_DATA_FILENAME = "plants.json";
+}
