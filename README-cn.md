@@ -6,7 +6,7 @@ Android Sunflower Java(alpha)
 
 >本项目 fork 自 [googlesamples/android-sunflower](https://github.com/googlesamples/android-sunflower) . 我将所有 Kotlin 实现都变成了 Java, 添加了 **[app-java]** module 作为 Java 版本的 Sunflower,  所以  [**Android Sunflower Java**](https://github.com/hatewx/android-sunflower-java) 项目中有两个 app modules:
 >
->**[app] **           Sunflower app 的 Kotlin 实现。
+>**[app]**           Sunflower app 的 Kotlin 实现。
 >[README](./README-kotlin.md) 
 >
 >**[app-java]**   Sunflower app 的 Java 实现。
