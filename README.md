@@ -10,7 +10,7 @@ Android Sunflower Java(alpha)
 >[README](./README-kotlin.md)
 >
 >**[app-java]**   Java implementation of Sunflower app. 
->[中文 README](./README-cn.cn)
+>[中文 README](./README-cn.md)
 >
 >
 >
