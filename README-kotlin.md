@@ -4,22 +4,23 @@ Android Sunflower Java(alpha)
 
 
 
->This project forked from [googlesamples/android-sunflower](https://github.com/googlesamples/android-sunflower) . I translated all **Kotlin** implementaions to **Java**, and added **[app-java]** module as the Java version of Sunflower app, so there are two app modules in  [**Android Sunflower Java**](https://github.com/hatewx/android-sunflower-java):
+> This project forked from [googlesamples/android-sunflower](https://github.com/googlesamples/android-sunflower) . I translated all **Kotlin** implementaions to **Java**, and added **[app-java]** module as the Java version of Sunflower app, so there are two app modules in  [**Android Sunflower Java**](https://github.com/hatewx/android-sunflower-java):
 >
->**[app] **           Kotlin implementation of Sunflower app. 
->[README](./README-kotlin.md)
+> **[app] **           Kotlin implementation of Sunflower app. 
 >
->**[app-java]**   Java implementation of Sunflower app. 
->[中文 README](./README-cn.cn)
+> **[app-java]**   Java implementation of Sunflower app. 
+> [README](./README.md) [中文 README](./README-cn.md)
 >
+> 
 >
+> The the Intention to create [**Android Sunflower Java**](https://github.com/hatewx/android-sunflower-java):
 >
->The the Intention to create [**Android Sunflower Java**](https://github.com/hatewx/android-sunflower-java):
->
->+ Many people may find it difficult to learn [Android Jetpack](https://developer.android.com/jetpack/) because they are not familiar with Kotlin.
->+ Many teams are keen to implement [Android Jetpack](https://developer.android.com/jetpack/) in existing projects, but still prefer to use the java language to approach.
+> - Many people may find it difficult to learn [Android Jetpack](https://developer.android.com/jetpack/) because they are not familiar with Kotlin.
+> - Many teams are keen to implement [Android Jetpack](https://developer.android.com/jetpack/) in existing projects, but still prefer to use the java language to approach.
 
 
+
+This project forked from [googlesamples/android-sunflower](https://github.com/googlesamples/android-sunflower) . I translated all **kotlin** file to **java**, and 
 
 A gardening app illustrating Android development best practices with Android Jetpack.
 
@@ -66,9 +67,10 @@ Screenshots
 
 Libraries Used
 --------------
-* [Foundation][0] - Components for core system capabilities and support for
+* [Foundation][0] - Components for core system capabilities, Kotlin extensions and support for
   multidex and automated testing.
   * [AppCompat][1] - Degrade gracefully on older versions of Android.
+  * [Android KTX][2] - Write more concise, idiomatic Kotlin code.
   * [Test][4] - An Android testing framework for unit and runtime UI tests.
 * [Architecture][10] - A collection of libraries that help you design robust, testable, and
   maintainable apps. Start with classes for managing your UI component lifecycle and handling data
@@ -87,6 +89,7 @@ Libraries Used
   * [Layout][35] - Lay out widgets using different algorithms.
 * Third party
   * [Glide][90] for image loading
+  * [Kotlin Coroutines][91] for managing background threads with simplified code and reducing needs for callbacks
 
 [0]: https://developer.android.com/jetpack/foundation/
 [1]: https://developer.android.com/topic/libraries/support-library/packages#v7-appcompat
@@ -119,6 +122,20 @@ Android Studio IDE setup
 ------------------------
 For development, the latest version of Android Studio 3.3 is required. The latest version can be
 downloaded from [here](https://developer.android.com/studio/).
+
+Sunflower uses [ktlint](https://ktlint.github.io/) to enforce Kotlin coding styles.
+Here's how to configure it for use with Android Studio (instructions adapted
+from the ktlint [README](https://github.com/shyiko/ktlint/blob/master/README.md)):
+
+- Close Android Studio if it's open
+
+- Download ktlint using these [installation instructions](https://github.com/shyiko/ktlint/blob/master/README.md#installation)
+
+- Inside the project root directory run:
+
+  `./ktlint --apply-to-idea-project --android`
+
+- Start Android Studio
 
 Additional resources
 --------------------
