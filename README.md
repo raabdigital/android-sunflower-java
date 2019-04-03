@@ -6,7 +6,7 @@ Android Sunflower Java(alpha)
 
 >This project forked from [googlesamples/android-sunflower](https://github.com/googlesamples/android-sunflower) . I translated all **Kotlin** implementaions to **Java**, and added **[app-java]** module as the Java version of Sunflower app, so there are two app modules in  [**Android Sunflower Java**](https://github.com/hatewx/android-sunflower-java):
 >
->**[app] **           Kotlin implementation of Sunflower app. 
+>**[app]**           Kotlin implementation of Sunflower app. 
 >[README](./README-kotlin.md)
 >
 >**[app-java]**   Java implementation of Sunflower app. 
