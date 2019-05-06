@@ -16,14 +16,14 @@ Android Sunflower Java(alpha)
 >
 >创建 [**Android Sunflower Java**](https://github.com/hatewx/android-sunflower-java) 项目的初衷:
 >
->+ 很多开发者因为对 Kotlin 语言的不熟悉，学习 [Android Jetpack](https://developer.android.com/jetpack/) 的过程中遇到不少困难，或者干脆一直拖延了 JetPack 的学习计划.
+>+ 很多开发者因为对 Kotlin 语言的不熟悉，学习 [Android Jetpack](https://developer.android.com/jetpack/) 的过程中遇到不少困难，或者干脆一直拖延了 Jetpack 的学习计划.
 >+ 许多团队非常热切的想要在现有的项目里实践 [Android Jetpack](https://developer.android.com/jetpack/), 但倾向于继续使用 Java 语言，或者逐步使用 Kotlin 语言。
 
 
 
-一个使用 Android Jecpack 来演示 Android 开发最佳实践的园艺 app.
+一个使用 Android Jetpack 来演示 Android 开发最佳实践的园艺 app.
 
-Android 向日葵目前作为 alpha 版本发片，并且正在加紧开发中…  要查看最新的变化，请访问
+Android 向日葵目前作为 alpha 版本发布，并且正在加紧开发中…  要查看最新的变化，请访问
 [Releases page](https://github.com/googlesamples/android-sunflower/releases).
 
 注意某些更改（例如数据库结构修改）不支持向后兼容，在 alpha 期间，这些不兼容可能会导致应用崩溃。如果发生这种情况，请卸载并重装应用。
@@ -42,7 +42,7 @@ Android Sunflower 演示了如何使用这些组件来开发一个简单的园�
 
 开始上手
 ---------------
-项目使用 Gradle 构建系统，使用 `gradlew build ` 命令构建项目或者使用 "Import Porject" 在 Android Studio 导入项目。
+项目使用 Gradle 构建系统，使用 `gradlew build ` 命令构建项目或者使用 "Import Project" 在 Android Studio 导入项目。
 
 有两个任务用于测试项目：
 
@@ -64,7 +64,7 @@ Screenshots
 --------------
 * [Foundation][0] - 基础核心系统能力的组件，同时也支持 multiex 和自动化测试。
   * [AppCompat][1] - 在较低版本的 Android 系统上恰当地降级
-  * [Test][4] - 用于单元和运行时界面测试的 Android 测试框架、
+  * [Test][4] - 用于单元测试和运行时界面测试的 Android 测试框架
 * [Architecture][10] - 一组集合库帮助您设计稳健、可测试且易维护的应用。通过一些类着手管理你的界面组件的生命周期并处理持久化数据。
   * [Data Binding][11] - 以声明方式将可观察数据绑定到界面元素
   * [Lifecycles][12] - 管理您的 Activity 和 Fragment 生命周期
@@ -101,7 +101,7 @@ Screenshots
 
 开发中的功能
 -----------------
-新版本的更新将包括新纳入增加的 Jetpack 组件，随着组件库演进的更新已有的组件。
+新版本的更新将包括新纳入的 Jetpack 组件，随着组件库的演进继续更新已有的组件。
 希望见到 Android 框架或 Jetpack 的某个特征在这个应用上实现？请新开一个  [issue](https://github.com/googlesamples/android-sunflower/issues).
 
 Android Studio IDE 准备
