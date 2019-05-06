@@ -17,6 +17,7 @@
 package com.google.samples.apps.sunflower.workers;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -40,6 +41,8 @@ import androidx.work.WorkerParameters;
  */
 public class SeedDatabaseWorker extends Worker {
 
+    private static final String TAG = SeedDatabaseWorker.class.getSimpleName();
+
     /**
      * @param appContext   The application {@link Context}
      * @param workerParams Parameters to setup the internal state of this worker
@@ -62,7 +65,7 @@ public class SeedDatabaseWorker extends Worker {
 
             return Result.success();
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.e(TAG, "Error seeding database", e);
             return Result.failure();
         }
     }
