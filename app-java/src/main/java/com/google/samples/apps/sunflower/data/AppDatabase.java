@@ -58,7 +58,7 @@ public abstract class AppDatabase extends RoomDatabase {
                     @Override
                     public void onCreate(@NonNull SupportSQLiteDatabase db) {
                         super.onCreate(db);
-                        WorkManager.getInstance().enqueue(OneTimeWorkRequest.from(SeedDatabaseWorker.class));
+                        WorkManager.getInstance(context).enqueue(OneTimeWorkRequest.from(SeedDatabaseWorker.class));
                     }
                 })
                 .build();
