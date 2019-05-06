@@ -20,7 +20,6 @@ import android.accessibilityservice.AccessibilityService;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 
 import org.junit.Before;
 import org.junit.Rule;

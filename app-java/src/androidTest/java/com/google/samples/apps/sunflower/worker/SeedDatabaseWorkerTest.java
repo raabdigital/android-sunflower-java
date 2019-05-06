@@ -29,7 +29,6 @@ import java.util.concurrent.ExecutionException;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.work.ListenableWorker;
-import androidx.work.WorkManager;
 import androidx.work.testing.TestListenableWorkerBuilder;
 
 /**
@@ -38,12 +37,10 @@ import androidx.work.testing.TestListenableWorkerBuilder;
 @RunWith(JUnit4.class)
 public class SeedDatabaseWorkerTest {
     private Context context;
-    //private WorkManager workManager;
 
     @Before
     public void setup() {
         context = ApplicationProvider.getApplicationContext();
-        //workManager = WorkManager.getInstance(context);
     }
 
     @Test
