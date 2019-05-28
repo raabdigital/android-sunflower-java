@@ -27,10 +27,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import androidx.navigation.Navigation;
-import androidx.test.InstrumentationRegistry;
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.espresso.intent.Intents;
 import androidx.test.rule.ActivityTestRule;
-import androidx.test.runner.AndroidJUnit4;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -48,7 +48,7 @@ import static org.hamcrest.Matchers.allOf;
 @RunWith(AndroidJUnit4.class)
 public class PlantDetailFragmentTest {
     @Rule
-    public ActivityTestRule activityTestRule = new ActivityTestRule(GardenActivity.class);
+    public ActivityTestRule activityTestRule = new ActivityTestRule<>(GardenActivity.class);
 
     @Before
     public void jumpToPlantDetailFragment() {

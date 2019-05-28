@@ -56,7 +56,6 @@ public class PlantDetailFragment extends Fragment {
         PlantDetailViewModel viewModel = ViewModelProviders.of(this, factory).get(PlantDetailViewModel.class);
 
         binding.setViewModel(viewModel);
-        binding.setLifecycleOwner(this);
         binding.fab.setOnClickListener(v -> {
             viewModel.addPlantToGarden();
             Snackbar.make(v, R.string.added_plant_to_garden, Snackbar.LENGTH_LONG).show();

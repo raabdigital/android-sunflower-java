@@ -22,8 +22,8 @@ import android.view.Gravity;
 import org.junit.Rule;
 import org.junit.Test;
 
-import androidx.test.InstrumentationRegistry;
 import androidx.test.espresso.action.ViewActions;
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.uiautomator.UiDevice;
 
@@ -43,7 +43,7 @@ import static org.junit.Assert.assertFalse;
  */
 public class GardenActivityTest {
     @Rule
-    public ActivityTestRule activityTestRule = new ActivityTestRule(GardenActivity.class);
+    public ActivityTestRule activityTestRule = new ActivityTestRule<>(GardenActivity.class);
 
     @Test
     public void clickOnAndroidHomeIcon_OpensAndClosesNavigation() {

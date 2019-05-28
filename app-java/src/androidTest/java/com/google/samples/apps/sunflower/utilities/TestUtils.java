@@ -25,12 +25,12 @@ import com.google.samples.apps.sunflower.data.Plant;
 import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.util.Preconditions;
 import androidx.test.espresso.intent.matcher.IntentMatchers;
 
 /**
@@ -73,7 +73,8 @@ public class TestUtils {
      * Return the content description for the navigation button view in the toolbar.
      */
     public static String getToolbarNavigationContentDescription(Activity activity, int toolbarId) {
-        return ((Toolbar) activity.findViewById(toolbarId)).getNavigationContentDescription().toString();
+        return Preconditions.checkNotNull(((Toolbar) activity.findViewById(toolbarId))
+                .getNavigationContentDescription()).toString();
     }
 
     public static Matcher<Intent> chooser(Matcher<Intent> matcher) {
